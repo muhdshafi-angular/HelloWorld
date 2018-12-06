@@ -3,22 +3,22 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 ## Installation
- Install NodeJS
- Install Angular CLI
+* Install NodeJS
+* Install Angular CLI
 
 ## Check versions
 
-node -v
-npm -v
-ng v
+* node -v
+* npm -v
+* ng v
 
 ## Create Project
 
-ng new <project name>
+* ng new <project name>
 
 ## Start embeded web server
 
-ng server  (ng s)
+* ng server  (ng s)
 
 
 
