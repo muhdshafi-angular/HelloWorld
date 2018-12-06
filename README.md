@@ -20,9 +20,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * ng server  (ng s)
 
+## Components
+Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.
 
-
-
+* ng generate component <name>  (ng g c <name>)
 
 
 
