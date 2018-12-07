@@ -49,12 +49,14 @@ Any event without enclosed in () is a normal browser event.
 **ngModel** is a directive in Angular 2 and above which provides the two way binding.  
 Two-way data binding really just boils down to event binding and property binding.
 
-* **\[value\]=”username”** - Binds the expression username to the input element’s value property
-* **(input)=”expression”** - Is a declarative way of binding an expression to the input element’s input event (yes there’s such event)
-* **username = $event.target.value** - The expression that gets executed when the input event is fired
-* **$event** - Is an expression exposed in event bindings by Angular, which has the value of the event’s payload
+* **\[value\]=”username”** - Binds the expression username to the input element’s value property  
+* **(input)=”expression”** - Is a declarative way of binding an expression to the input element’s input event (yes there’s such event)  
+* **username = $event.target.value** - The expression that gets executed when the input event is fired  
+* **$event** - Is an expression exposed in event bindings by Angular, which has the value of the event’s payload  
 
-
+**ngModel** provide an abstraction for the above steps.  
+`<input [ngModel]="username" (ngModelChange)="username = $event">` without short hand syntax.  
+`<input [(ngModel)]="username" >` without short hand syntax.  
 
 
 ## Running end-to-end tests
