@@ -8,9 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Check versions
 
-* node -v
-* npm -v
-* ng v
+* `node -v`
+* `npm -v`
+* `ng v`
 
 ## Create Project
 
