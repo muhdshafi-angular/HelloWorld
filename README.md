@@ -50,7 +50,7 @@ Any event without enclosed in () is a normal browser event.
 Two-way data binding really just boils down to event binding and property binding.
 
 * **\[value\]=”username”** - Binds the expression username to the input element’s value property  
-* **(input)=”expression”** - Is a declarative way of binding an expression to the input element’s input event (yes there’s such event)  
+* **(event)=”expression”** - Is a declarative way of binding an expression to the input element’s event  
 * **username = $event.target.value** - The expression that gets executed when the input event is fired  
 * **$event** - Is an expression exposed in event bindings by Angular, which has the value of the event’s payload  
 
