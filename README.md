@@ -64,7 +64,7 @@ The handler expression uses only `$event` and no longer `$event.target.value`. `
 
 `<input [(ngModel)]="username" >` - shorthand syntax (called banana in the box).  
 
-*Note  
+*Note*  
 We need to import the `FormsModule` inorder to use `ngModel` 
 `import { FormsModule } from '@angular/forms';`
 
