@@ -31,6 +31,7 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 ### Component to Template
 * String Interpolation( `{{...}}` )  
 `Welcome to {{ title }}!`  
+  {{num + 100}}  
  The text between the braces is a template expression that Angular first evaluates and then converts to a string.
  
 
