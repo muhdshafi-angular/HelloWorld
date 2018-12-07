@@ -39,9 +39,9 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 
 ### Template to Component
 * Event  
-* Any event enclosed in () is a Angular events  
-`<button  (click)="onclick($event)">Click</button>`  
-`$event` for passing the event object to component  
+* Any event enclosed in () is an Angular event 
+example: `<button  (click)="onclick($event)">Click</button>`  
+Use `$event` for passing the event object to component  
 ### 2 way binding
 
 
