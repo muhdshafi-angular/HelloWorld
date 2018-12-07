@@ -65,6 +65,18 @@ The handler expression uses only `$event` and no longer `$event.target.value`. `
 `<input [(ngModel)]="username" >` - shorthand syntax (called banana in the box).  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
