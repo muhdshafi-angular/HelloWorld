@@ -14,16 +14,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Create Project
 
-* ng new \<project name\>
+* `ng new \<project name\>`
 
 ## Start embeded web server
 
-* ng server  (ng s)
+* `ng server  (ng s)`
 
 ## Components
 Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.
 
-* ng generate component <name>  (ng g c \<name\>)
+* `ng generate component <name>  (ng g c \<name\>)`
 
 ## Data binding
 * Template - View Part of component, Support  HTML markup, ignore JavaScript
@@ -32,7 +32,7 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 * String Interpolation
 
 ### Template to Component
-* String 
+* Event 
 ### 2 way binding
 
 
