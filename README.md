@@ -35,7 +35,9 @@ Components are the most basic UI building block of an Angular app. An Angular ap
  The text between the braces is a template expression that Angular first evaluates and then converts to a string.
  
 
-* Property binding
+* Property binding  
+`<input type="text" [value]="title">` value of the expression `title` is set to the property `value`.  
+`<input type="text" value="title">` String value `title` is set to the property `value`.  
 
 ### Template to Component
 * Event  
