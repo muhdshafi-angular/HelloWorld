@@ -41,11 +41,16 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 * Event  
 * Any event enclosed in () is an Angular event 
 example: `<button  (click)="onclick($event)">Click</button>`  
-Use `$event` for passing the event object to component.  
-Any event without enclosed () is a normal browser event.  
+Use the expression `$event` for passing the event object to component.  
+Any event without enclosed in () is a normal browser event.  
 ### 2 way binding
+**ngModel** is a directive in Angular 2 and above which provides the two way binding.  
+Two-way data binding really just boils down to event binding and property binding.
 
-
+* **\[value\]=”username”** - Binds the expression username to the input element’s value property
+* **(input)=”expression”** - Is a declarative way of binding an expression to the input element’s input event (yes there’s such event)
+* **username = $event.target.value** - The expression that gets executed when the input event is fired
+* **$event** - Is an expression exposed in event bindings by Angular, which has the value of the event’s payload
 
 
 
