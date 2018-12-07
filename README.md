@@ -58,7 +58,7 @@ Two-way data binding really just boils down to event binding and property bindin
 `<input [ngModel]="username" (ngModelChange)="username = $event">` without short hand syntax.  
 The property binding `\[ngModel\]`takes care of updating the underlying input DOM element.  
 The event binding `(ngModelChange)` notifies the outside world when there was a change in the DOM.  
-The handler expression uses only `$event` and no longer `$event.target.value`. `$event` is the payload of the emitted event. In other words, ngModelChange takes care of extracting target.value from the inner $event payload, and simply emits that (to be technically correct, it’s actually the DefaultValueAccessor that takes of the extracting that value and also writing to the underlying DOM object).
+The handler expression uses only `$event` and no longer `$event.target.value`. `$event` is the payload of the emitted event. In other words, `ngModelChange` takes care of extracting `target.value` from the inner `$event` payload, and simply emits that (to be technically correct, it’s actually the `DefaultValueAccessor` that takes of the extracting that value and also writing to the underlying DOM object).
 
 `<input [(ngModel)]="username" >` without short hand syntax.  
 
