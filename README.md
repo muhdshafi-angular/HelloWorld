@@ -54,7 +54,7 @@ Two-way data binding really just boils down to event binding and property bindin
 * **username = $event.target.value** - The expression that gets executed when the input event is fired  
 * **$event** - Is an expression exposed in event bindings by Angular, which has the value of the event’s payload  
 
-**ngModel** provide an abstraction for the above steps.  
+**ngModel** provide an abstraction for the above steps.    
 `<input [ngModel]="username" (ngModelChange)="username = $event">` - without short hand syntax.  
 The property binding `\[ngModel\]`takes care of updating the underlying input DOM element.  
 The event binding `(ngModelChange)` notifies the outside world when there was a change in the DOM.  
