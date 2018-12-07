@@ -25,7 +25,15 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 
 * ng generate component <name>  (ng g c \<name\>)
 
+## Data binding
+* Template - View Part of component, Support  HTML markup, ignore JavaScript
 
+### Component to Template
+* String Interpolation
+
+### Template to Component
+* String 
+### 2 way binding
 
 
 
