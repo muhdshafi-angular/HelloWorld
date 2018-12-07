@@ -41,7 +41,8 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 * Event  
 * Any event enclosed in () is an Angular event 
 example: `<button  (click)="onclick($event)">Click</button>`  
-Use `$event` for passing the event object to component  
+Use `$event` for passing the event object to component.  
+Any event without enclosed () is a normal browser event.  
 ### 2 way binding
 
 
