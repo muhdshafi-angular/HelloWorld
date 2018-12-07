@@ -29,8 +29,8 @@ Components are the most basic UI building block of an Angular app. An Angular ap
 * Template - View Part of component, Support  HTML markup, ignore JavaScript
 
 ### Component to Template
-* String Interpolation( `{{...}}` )
-`Welcome to {{ title }}!`
+* String Interpolation( `{{...}}` )__
+`Welcome to {{ title }}!`__
  The text between the braces is a template expression that Angular first evaluates and then converts to a string.
  
 
