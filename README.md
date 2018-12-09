@@ -68,7 +68,39 @@ The handler expression uses only `$event` and no longer `$event.target.value`. `
 We need to import the `FormsModule` inorder to use `ngModel`  
 `import { FormsModule } from '@angular/forms';`
 
+## Control statements
+### ngIf
+`<div *ngIf="dataArray.length">`
+### ngIfThen
+`<div *ngIf="dataArray.length; then x else y">
+</div>
+<ng-template #x>
+  <p>contents available</p> 
+ </ng-template>
+<ng-template #y>
+ <p>contents not available</p> 
+</ng-template>`
+### ngIfElse
+`<div *ngIf="dataArray.length; else noContent">
+  <p>contents available</p>
+</div>
+<ng-template #noContent>
+ <p>contents not available</p> 
+</ng-template>`
 
+### ngSwitch
+`<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map view content</div>
+  <div *ngSwitchCase="'list'">List view content</div>
+  <div *ngSwitchDefault>Other view content</div>
+</div>`
+### ngForOf - Change Detection
+`<button class="btn" (click)="load()">Load Data</button>
+  <ul>
+    <li *ngFor="let course of courseList; index as i; even as e; trackBy:trackCourse">
+      {{e}}:{{i}}:{{course.name}}
+    </li>
+  </ul>`
 
 
 
