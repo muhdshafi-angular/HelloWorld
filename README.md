@@ -70,7 +70,7 @@ We need to import the `FormsModule` inorder to use `ngModel`
 
 ## Control statements
 ### ngIf
-`<div *ngIf="dataArray.length">`
+`\<div *ngIf="dataArray.length"\>`
 ### ngIfThen  
 `<div *ngIf="dataArray.length; then x else y">
 </div>
