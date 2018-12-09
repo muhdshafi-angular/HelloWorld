@@ -71,7 +71,7 @@ We need to import the `FormsModule` inorder to use `ngModel`
 ## Control statements
 ### ngIf
 `<div *ngIf="dataArray.length">`
-### ngIfThen
+### ngIfThen  
 `<div *ngIf="dataArray.length; then x else y">
 </div>
 <ng-template #x>
@@ -79,7 +79,7 @@ We need to import the `FormsModule` inorder to use `ngModel`
  </ng-template>
 <ng-template #y>
  <p>contents not available</p> 
-</ng-template>`
+</ng-template>`  
 ### ngIfElse
 `<div *ngIf="dataArray.length; else noContent">
   <p>contents available</p>
@@ -88,13 +88,13 @@ We need to import the `FormsModule` inorder to use `ngModel`
  <p>contents not available</p> 
 </ng-template>`
 
-### ngSwitch
+### ngSwitch  
 `<div [ngSwitch]="viewMode">
   <div *ngSwitchCase="'map'">Map view content</div>
   <div *ngSwitchCase="'list'">List view content</div>
   <div *ngSwitchDefault>Other view content</div>
 </div>`
-### ngForOf - Change Detection
+### ngForOf - Change Detection  
 `<button class="btn" (click)="load()">Load Data</button>
   <ul>
     <li *ngFor="let course of courseList; index as i; even as e; trackBy:trackCourse">
