@@ -4,7 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 * Install NodeJS
-* Install Angular CLI
+* Install Angular CLI  
+`npm install -g @angular/cli`
 
 ## Check versions
 
