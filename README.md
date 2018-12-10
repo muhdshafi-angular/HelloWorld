@@ -78,7 +78,10 @@ It is possible for the identities of elements in the iterator to change while th
 
 To customize the default tracking algorithm, NgForOf supports trackBy option. trackBy takes a function which has two arguments: index and item. If trackBy is given, Angular tracks changes by the return value of the function.  
 
-
+## Forms
+### Template Driven
+### Reactive
+### Form Builder
 
 
 
