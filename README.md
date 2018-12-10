@@ -84,7 +84,16 @@ To customize the default tracking algorithm, NgForOf supports trackBy option. tr
 ### Form Builder
 
 
+https://github.com/muhdshafi/deploy.git
 
+
+https://mudhshafi.github.io/repository
+
+https://muhdshafi.github.io/deploy/
+
+ng build --prod --base-href="https://muhdshafi.github.io/deploy/"
+
+ngh --dir=dist/deploy
 
 
 
