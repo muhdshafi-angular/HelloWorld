@@ -1,0 +1,52 @@
+<h3>
+  common-directives works!
+</h3>
+--------- old Approach (IF) ----------------
+<div *ngIf="dataArray.length">
+  contents available
+</div>
+<div *ngIf="dataArray.length == 0">
+  contents not available
+</div>
+--------- If else Approach  ----------------
+<div *ngIf="dataArray.length; else noContent">
+  <p>contents available</p>
+</div>
+<ng-template #noContent>
+ <p>contents not available</p> 
+</ng-template>
+--------- If else then Approach  ----------------
+<div *ngIf="dataArray.length; then x else y">
+</div>
+<ng-template #x>
+  <p>contents available</p> 
+ </ng-template>
+<ng-template #y>
+ <p>contents not available</p> 
+</ng-template>
+--------------------- hidden property (Just hidden but present in DOM)----------------------------------
+    <div [hidden]="dataArray.length == 0">
+      <h3>List of Course</h3>
+    </div>
+    <div [hidden]="dataArray.length > 0">
+      <h3>No courses available</h3>
+    </div>
+---------------------- switch ------------------------------------
+<ul class="nav nav-pills">
+  <li class="nav-item"> <a class="nav-link" [class.active]="viewMode =='map'" (click)="viewMode='map'">View</a> </li>
+  <li class="nav-item" ><a class="nav-link" [class.active]="viewMode =='list'" (click)="viewMode='list'"> List View</a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map view content</div>
+  <div *ngSwitchCase="'list'">List view content</div>
+  <div *ngSwitchDefault>Other view content</div>
+</div>
+------------------- Change Propagation ------------------------------------
+<div style="background-color: rgb(147, 214, 235)">
+  <button class="btn" (click)="load()">Load Data</button>
+  <ul>
+    <li *ngFor="let course of courseList; index as i; even as e; trackBy:trackCourse">
+      {{e}}:{{i}}:{{course.name}}
+    </li>
+  </ul>
+</div>

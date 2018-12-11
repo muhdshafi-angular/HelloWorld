@@ -1,0 +1,27 @@
+<h3>
+  {{title}}
+</h3>
+<h3>
+  {{num + 100}}
+</h3>
+<label>Property binding: </label>
+<input type="text" [value]="title">
+<br><br>
+<label >Event binding: </label>
+<button  (click)="onclick($event)">Click</button>
+<br><br>
+<label >Event filter: </label>
+<p>  
+  <button value="phii hi hi" (click)="onclick2(name.value)" #name  class="btn btn-danger">Click</button>
+</p>
+<p>
+  <input (keyup.enter)="onEnter()" type="text" >
+</p>
+<br><br>
+<label >Two way binding: </label>
+<input #i type="text" [(ngModel)]="data">
+<label>{{data}}</label>
+<br><br>
+<label >Two way binding without shorthand syntax : </label>
+<input [ngModel]="data" (ngModelChange)="data = $event">
+<p>Hello {{data}}!</p>

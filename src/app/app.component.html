@@ -1,6 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+
 <h1>
     Welcome to {{ title }}!
 </h1>
+
+<div class="container" style="background-color: cornflowerblue">
+    <app-data-binding></app-data-binding>
+</div>
+<div class="container" style="background-color: rgb(35, 192, 184)">
+    <app-custom-counter [(counter)]="counterValue"></app-custom-counter>
+    <p>counterValue = {{counterValue}}</p>
+</div>
+
+<div class="container" style="background-color: rgb(238, 115, 43)">
+    <app-common-directives></app-common-directives>
+</div>
+
+<div class="container" style="background-color: rgb(179, 238, 103)">
+    <app-css-demo></app-css-demo>
+</div>
+
+<div class="container" style="background-color: rgb(146, 233, 233)">
+    <app-form-template></app-form-template>
+</div>
+
+
+<div class="container" style="background-color: rgb(245, 233, 129)">
+        <app-form-reactive></app-form-reactive>
+    </div>
 <router-outlet></router-outlet>

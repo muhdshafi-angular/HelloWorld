@@ -1,0 +1,11 @@
+<h2>
+  css-demo works!
+</h2>
+<div>
+  <h3>Favorite button</h3>
+  <i class="fa-heart" [ngClass] = "{fas:isFav, far:!isFav}" (click)="isFav = !isFav"></i>
+</div><br>
+<div>
+  <h3>Like Button</h3>
+  <i class="far fa-thumbs-up" [ngClass] = "{fas:isLiked, far:!isLiked}" (click)="toggleLike();"></i>{{likeCount}}
+</div>

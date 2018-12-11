@@ -1,0 +1,35 @@
+<p>
+  form-reactive works!
+</p>
+<form [formGroup]="form" (ngSubmit)="login()">
+    <div *ngIf="form.errors" class="alert alert-danger">The username/password is invalid</div>
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input  type="text"
+                class="form-control"
+                formControlName="usernameControl"
+                >
+        <div *ngIf="usernameGetter.pending"  class="alert alert-warning" >Checking availability . . .</div>
+        <div *ngIf="usernameGetter.touched && usernameGetter.invalid"
+              class="alert alert-danger" >
+          <div *ngIf="usernameGetter.errors.required"> User name is required </div>
+          <div *ngIf="usernameGetter.errors.notUnique">Username is already taken</div>
+          <div *ngIf="usernameGetter.errors.spaceNotAllowed">Can not contain space</div>
+        </div>        
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input  type="text"
+                class="form-control"
+                formControlName="passworControl"
+                >
+        <div *ngIf="passwordGetter.touched && passwordGetter.invalid"
+              class="alert alert-danger" >
+          <div *ngIf="passwordGetter.errors.required"> Pasword is required </div>
+        </div>            
+    </div>
+
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+</form>

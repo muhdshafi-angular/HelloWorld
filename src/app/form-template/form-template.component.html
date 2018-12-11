@@ -1,0 +1,61 @@
+<p>
+  form-template works!
+</p>
+
+<form #formTV="ngForm" (ngSubmit)="submit(formTV)">
+    <div ngModelGroup="contact" #contactTV="ngModelGroup">
+      {{contactTV.invalid}}
+  <div class="form-group">
+    <label for="name" >First Name:</label>
+    <input  name="name" 
+            type="text" 
+            class="form-control" 
+            ngModel
+            #nameTV="ngModel"
+            required minlength="3" maxlength="5"
+            placeholder="Enter Name"
+            (change) = "log(contactTV);">
+    <div class="alert alert-danger" *ngIf="nameTV.touched && nameTV.invalid" >
+      <div *ngIf="nameTV.errors.required">This field is required</div>
+      <div *ngIf="nameTV.errors.minlength">Minimum 3 characters are required</div>
+      <div *ngIf="nameTV.errors.maxlength">Can not have more than 5 characters</div>
+    </div>        
+  </div>
+</div>
+  <div class="form-group">
+    <label for="comment">Password</label>
+    <textarea name="comment"
+              ngModel
+              #commentTV = "ngModel"
+              class="form-control" 
+              required
+              placeholder="Enter the comment"></textarea>
+    <div class="alert alert-danger" *ngIf="commentTV.touched && commentTV.invalid" >
+      This field is required
+    </div>    
+  </div>
+
+  <div class="checkbox" >
+    <label>
+      <input type="checkbox" name="isSubscribed">
+      Subscribe to email
+    </label>
+  </div>
+  
+  <div *ngFor="let method of contactMethods" class="radio">
+    <label>
+      <input  type="radio" name="contactMethod" [value]="method.id">
+      {{method.name}}
+    </label>
+  </div>
+
+  <div class="form-group">
+      <label for ="contactMethod"></label>
+      <select multiple ngModel name="contactMethod" id="contactMethod" class="form-control">
+        <option *ngFor="let method of contactMethods" [value]="method">{{method.name}}</option>
+      </select>
+  </div>
+
+  <button [disabled]="formTV.invalid" onclick="this.blur();" type="submit" class="btn btn-primary">Submit</button>
+
+</form>
