@@ -96,6 +96,21 @@ ng build --prod --base-href="https://muhdshafi.github.io/deploy/"
 ngh --dir=dist/deploy
 
 
+# Deployment  
+## Firebase  
+* Create a Firebase project (`https://console.firebase.google.com`) 
+* Install firebase tools    
+  `npm install -g firebase-tools`  
+* Build the project 
+  `ng build --prod`  
+* go to '/dist/<app-name>' and ini firebase  
+  `firebase init`
+* Choose hosting
+* Choose the project created earlier in firebase console  
+  
+  
+  
+## Github pages  
 
 
 
