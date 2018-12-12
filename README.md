@@ -101,14 +101,23 @@ ngh --dir=dist/deploy
 * Create a Firebase project (`https://console.firebase.google.com`) 
 * Install firebase tools    
   `npm install -g firebase-tools`  
+* Login to firebase   
+  `firebase login`
 * Build the project 
   `ng build --prod`  
 * go to '/dist/<app-name>' and ini firebase  
   `firebase init`
 * Choose hosting
 * Choose the project created earlier in firebase console  
-  
-  
+  If the project not listed then choose 'create a new project' option  
+  then run `firebase use --add` and the project.
+* Run `firebase deploy`  
+* Hit the Hosting URL (ex: `https://shopping-app-a7a07.firebaseapp.com`)
+  you may get a link to doc page
+* go to `angular.json` and update the output path 
+  `"outputPath": "dist/shopping-app/public"`   
+* Build the project 
+* Run `firebase deploy`  
   
 ## Github pages  
 
