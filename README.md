@@ -119,6 +119,9 @@ ngh --dir=dist/deploy
 * Build the project 
 * Run `firebase deploy`  
   
+* Install firebase module to access Firebase Firestore database.
+  `npm install --save firebase`
+  
 ## Github pages  
 
 
